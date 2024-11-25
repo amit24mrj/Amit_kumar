@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: url("image1.jpg");
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+svg path{
+    fill :transparent;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 50;
+    /* stroke-dashoffset: 50; */
+    animation: textAnimation 4s ease-in-out forwards;
+}
+@keyframes textAnimation {
+    0%{
+        stroke-dashoffset: 50;
+    }
+    100%{
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+    70%{
+        fill: transparent;
+    }
+}
